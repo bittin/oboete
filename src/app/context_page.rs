@@ -42,7 +42,7 @@ impl ContextPage {
                 app_model.settings(),
                 Message::ToggleContextPage(ContextPage::Settings),
             )
-            .title(fl!("folder-details")),
+            .title(fl!("settings")),
             ContextPage::FolderSettings => {
                 let crate::app::State::Ready { screen, .. } = &app_model.state else {
                     return None;
