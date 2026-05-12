@@ -7,8 +7,8 @@ use cosmic::iced::alignment::{Horizontal, Vertical};
 use cosmic::iced::keyboard::key::Named;
 use cosmic::iced::keyboard::{self, Key};
 use cosmic::iced::{self, Color, ContentFit, Font, Length, Subscription, event, window};
-use cosmic::iced_core::text::Wrapping;
-use cosmic::iced_widget::{column, row, stack};
+use cosmic::iced::core::text::Wrapping;
+use cosmic::iced::widget::{column, row, stack};
 use cosmic::widget::{button, container, image, mouse_area, text, tooltip};
 use cosmic::{Element, Task, theme};
 use sqlx::{Pool, Sqlite};
@@ -415,7 +415,7 @@ fn study_view<'a>(
                     width: 0.0,
                     radius: theme.cosmic().corner_radii.radius_s.into(),
                 };
-                a.shadow = cosmic::iced_core::Shadow {
+                a.shadow = cosmic::iced::core::Shadow {
                     color: studying_flashcard.flashcard.status.get_border_color(),
                     offset: cosmic::iced::Vector::new(0.0, 0.0),
                     blur_radius: 16.0,

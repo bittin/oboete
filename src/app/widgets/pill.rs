@@ -5,7 +5,7 @@ use cosmic::{
         Background, Border, Color, Element, Length, Padding, Point, Rectangle, Size,
         alignment::Vertical, event::Event, mouse,
     },
-    iced_core::{
+    iced::core::{
         Clipboard, Layout, Renderer as IcedRenderer, Shell, layout, renderer, text::Renderer,
         widget::Tree,
     },
@@ -184,17 +184,17 @@ impl<'a, Message: 'static + Clone> Widget<Message, cosmic::Theme, cosmic::Render
             bounds.y + bounds.height / 2.0,
         );
         renderer.fill_text(
-            cosmic::iced_core::text::Text {
+            cosmic::iced::core::text::Text {
                 content: self.text.clone(),
                 bounds: Size::new(bounds.width, bounds.height),
                 size: cosmic::iced::Pixels(self.font_size),
-                line_height: cosmic::iced_core::text::LineHeight::default(),
+                line_height: cosmic::iced::core::text::LineHeight::default(),
                 font: cosmic::font::Font::default(),
-                align_x: cosmic::iced_core::text::Alignment::Center,
+                align_x: cosmic::iced::core::text::Alignment::Center,
                 align_y: Vertical::Center,
                 shaping: cosmic::iced::advanced::text::Shaping::Basic,
-                wrapping: cosmic::iced_core::text::Wrapping::None,
-                ellipsize: cosmic::iced_core::text::Ellipsize::None,
+                wrapping: cosmic::iced::core::text::Wrapping::None,
+                ellipsize: cosmic::iced::core::text::Ellipsize::None,
             },
             text_center,
             self.text_color,

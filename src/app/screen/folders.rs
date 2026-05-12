@@ -5,8 +5,8 @@ use std::sync::Arc;
 use cosmic::cosmic_theme::Spacing;
 use cosmic::iced::alignment::{Horizontal, Vertical};
 use cosmic::iced::{Alignment, Length, Subscription};
-use cosmic::iced_core::text::Wrapping;
-use cosmic::iced_widget::{column, row};
+use cosmic::iced::core::text::Wrapping;
+use cosmic::iced::widget::{column, row};
 use cosmic::widget::{
     Row, button, container, list, scrollable, settings, slider, text, text_input,
 };
