@@ -12,7 +12,7 @@ impl FSRSScheduler {
     /// Init a new [`FSRSScheduler`]
     pub fn new(desired_retention: f32) -> Result<Self, anywho::Error> {
         // Use default parameters (works well for most users)
-        let fsrs = FSRS::new(Some(&[]))?;
+        let fsrs = FSRS::new(&[])?;
 
         Ok(Self {
             fsrs,
