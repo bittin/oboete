@@ -142,6 +142,11 @@
   </keywords>
 
   <releases>
+    <release version="0.2.6" date="2026-07-04">
+        <description>
+            <p>Updated dependencies</p>
+        </description>
+    </release>
     <release version="0.2.5" date="2026-06-02">
         <description>
             <p>Updated dependencies</p>

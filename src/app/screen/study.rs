@@ -409,7 +409,7 @@ fn study_view<'a>(
     container(stack![
         container(mouse_area(flashcard_content).on_press(Message::SwapFlashcardSide))
             .style(|theme| {
-                let mut a = theme::style::Container::primary(theme.cosmic());
+                let mut a = theme::style::Container::primary(theme.cosmic(), false);
                 a.border = cosmic::iced::Border {
                     color: studying_flashcard.flashcard.status.get_border_color(),
                     width: 0.0,
